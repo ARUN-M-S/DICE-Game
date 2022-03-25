@@ -12,8 +12,10 @@ var randomImage2="images/dice"+randomNumbers2+".png";
 document.querySelectorAll("img")[1].setAttribute("src",randomImage2);
 
 if(randomNumbers>randomNumbers2){
-    document.querySelector("h1").innerHTML="Player1 is won";
+    document.querySelector("h1").innerHTML="Player1 wins";
+}else if(randomNumbers<randomNumbers2){
+    document.querySelector("h1").innerHTML="Player2 wins";
 }else{
-    document.querySelector("h1").innerHTML="Player2 is won";
+    document.querySelector("h1").innerHTML="Draw!!"
 }
 
